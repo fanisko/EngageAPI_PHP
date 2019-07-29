@@ -1,6 +1,6 @@
-# EngageAPI_PHP
- 
-Introduction: ...
+# EngageAPI_PHP - v0.1
+One stop content publishing API
+Create & Curate content from anywhere into your platform with ease. Post news, infographics, curate content from social media sites and keep your feed up-to-date!
 ## Installation
 
 #### PHP compatibility
