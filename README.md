@@ -37,9 +37,9 @@ Create & Curate content from anywhere into your platform with ease. Post news, i
 </table>
 
 ## Get your API key and Secret key
-Sign up at engage.fanisko.com/api (it's free!).
+Sign up at engage.fanisko.com/api (it's free!). If you have already registered, click here to login.
 
-Create a new project to generate the API key and Secret key.
+Create a new project to generate the API key and Secret key or choose from an existing project.
 
 
 ## Installation
@@ -83,7 +83,27 @@ The response will be the json decoded API response.
 
 ```json
 {
-    "result": ["..."], 
+    "result": [
+        {
+            "categories": [],
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "guid": "",
+            "link": "",
+            "media": [],
+            "meta": {},
+            "status": "publish",
+            "status_code": 0,
+            "tags": [],
+            "thumbnail": "https://i.ytimg.com/vi/PCwL3-hkKrg/maxresdefault.jpg",
+            "title": "Sample Long News",
+            "trash": false,
+            "type": "news",
+            "type_id": 1, // Long news type id is '1'.
+            "user": "user_id",
+            "visible_to": []
+        }
+    ],
     "status_code": 200, 
     "page_no": 0
 }
@@ -100,9 +120,29 @@ The response will be the json decoded API response.
 
 ```json
 {
-    "result": ["..."], 
+    "result": [
+        {
+            "categories": [],
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "guid": "",
+            "link": "",
+            "media": [],
+            "meta": {},
+            "status": "publish",
+            "status_code": 0,
+            "tags": [],
+            "thumbnail": "https://i.ytimg.com/vi/PCwL3-hkKrg/maxresdefault.jpg",
+            "title": "Sample Long News",
+            "trash": false,
+            "type": "news",
+            "type_id": 1, // Long news type id is '1'.
+            "user": "user_id",
+            "visible_to": []
+        }
+    ],
     "status_code": 200, 
-    "page_no": 0,
+    "page_no": 0
 }
 ```
 This function returns 10 feeds which has been created or updated recently, page by page.
@@ -112,14 +152,34 @@ This function returns 10 feeds which has been created or updated recently, page 
 ###### Get the feed content by its guid.
 
 ```php
-$feed = $client->get_content($guid);
+    $feed = $client->get_content($guid);
 ```
 
 The response will be the json decoded API response.
 
 ```json
 {
-    "result": ["..."], 
+    "result": [
+        {
+            "categories": [],
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "guid": "",
+            "link": "",
+            "media": [],
+            "meta": {},
+            "status": "publish",
+            "status_code": 0,
+            "tags": [],
+            "thumbnail": "https://i.ytimg.com/vi/PCwL3-hkKrg/maxresdefault.jpg",
+            "title": "Sample Long News",
+            "trash": false,
+            "type": "news",
+            "type_id": 1, // Long news type id is '1'.
+            "user": "user_id",
+            "visible_to": []
+        }
+    ],
     "status_code": 200
 }
 ```
